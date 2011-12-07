@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Forehead</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./styles/styles.css" type="text/css" media="screen" />
+	<script src="js/jquery-1.7.1.js"></script>
+	<script src="js/json2.js"></script>
+	<script src="js/handlebars-1.0.0.beta.4.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/jst.js"></script>
+	<script src="js/models.js"></script>
+	<script src="js/collections.js"></script>
+	<script src="js/views.js"></script>
+	<script src="js/routers.js"></script>
+	<script src="js/apps.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // Load & compile hbs templates.
+        JST.load_partials(['hello']);
+        JST.load_templates(['index']);
+        
+        // Start an app
+        MainApp.start();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
