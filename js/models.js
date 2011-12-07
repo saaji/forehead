@@ -1,3 +1,7 @@
-// Here we put our backbone models
-// 
-// var MyModed = Backbone.Model.extend({});
+(function(){
+  var root = this;
+
+  // Here we put our backbone models 
+  // this.MyModel = Backbone.Model.extend({});
+
+}).call(this);

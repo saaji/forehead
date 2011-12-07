@@ -1,22 +1,27 @@
-var MainApp = {
-  Models: {},
+(function(){
+  var root = this;
   
-  Collections: {},
+  root.MainApp = {
+    Models: {},
   
-  Views: {
-    Index: IndexView
-  },
+    Collections: {},
   
-  Routers: {
-    Main: MainRouter
-  },
+    Views: {
+      Index: IndexView
+    },
+  
+    Routers: {
+      Main: MainRouter
+    },
   
   
-  start: function(){
-    // Views
-    this.index = new this.Views.Index({ el: '#app' });
+    start: function(){
+      // Views
+      this.index = new this.Views.Index({ el: '#app' });
     
-    this.router = new this.Routers.Main();
-    Backbone.history.start();
-  }
-};
+      this.router = new this.Routers.Main();
+      Backbone.history.start();
+    }
+  };
+
+}).call(this);

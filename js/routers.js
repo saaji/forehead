@@ -1,9 +1,14 @@
-var MainRouter = Backbone.Router.extend({
-  routes: {
-    "": "index"
-  },
+(function(){
+  var root = this;
   
-  index: function() {
-    MainApp.index.render();
-  }
-});
+  root.MainRouter = Backbone.Router.extend({
+    routes: {
+      "": "index"
+    },
+  
+    index: function() {
+      MainApp.index.render();
+    }
+  });
+
+}).call(this);
